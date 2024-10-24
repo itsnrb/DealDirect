@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="Stylesheet" href="styles.css">
+    <title>Login</title>
+    <link rel="Stylesheet" href="styles.css"> 
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>Hey there, I'm glad you made it this far. <br> So we 
-        are students from HTWG Konstanz. 
-        <br> 
-        Pascal X, Sebastian Bruns
-        <br> I really hope you like what you see. Check out and text us 
-        via <a href="" >messages</a>.
-    </p>
+    <div class="login-container">
+        <form class="login-form" action="/login" method="POST">
+            <h2>Login</h2>
+            
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
